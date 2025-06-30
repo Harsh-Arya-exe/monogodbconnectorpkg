@@ -7,10 +7,11 @@ HIPHEN_E_DOT = "-e ."
 def get_requirements(file_path : str) -> List[str]:
     requirements = []
     with open(file_path) as f:
-        requirements = [requirements.replace("\n","") for requirements in f.readlines()] 
+        requirements = f.readlines()
+        requirements = [req.replace("\n","") for req in requirements]
 
-        if "HIPHEN_E_DOT" in requirements:
-            requirements.remove("HIPHEN_E_DOT")
+        if HIPHEN_E_DOT in requirements:
+            requirements.remove(HIPHEN_E_DOT)
     return requirements
 
 with open("README.md", "r", encoding="utf-8") as f:
