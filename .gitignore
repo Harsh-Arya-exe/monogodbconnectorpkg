@@ -138,11 +138,13 @@ celerybeat.pid
 .env
 .envrc
 .venv
+.pkg_env
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+pkg_env/
 
 # Spyder project settings
 .spyderproject
@@ -206,4 +208,3 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-menv
