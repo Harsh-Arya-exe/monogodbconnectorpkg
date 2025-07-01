@@ -8,7 +8,7 @@ list_of_files = [
     "src/__init__.py",
     f"src/{package_name}/__init__.py",
     f"src/{package_name}/mongo_crud.py",
-    "testing/_init__/py",
+    "testing/__init__.py",
     "testing/unit/__init__.py",
     "testing/unit/unit.py",
     "testing/integration/__init__.py",
