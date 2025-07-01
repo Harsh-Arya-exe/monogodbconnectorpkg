@@ -100,4 +100,4 @@ commands =
 deps = 
     flake8
 commands = 
-    flake8 your_package_name/
+    flake8 package_name/
