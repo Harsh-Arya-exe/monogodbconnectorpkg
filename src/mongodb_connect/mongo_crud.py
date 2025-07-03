@@ -1,6 +1,7 @@
 from pymongo.mongo_client import MongoClient
 from dotenv import load_dotenv
 import pandas as pd
+from typing import Optional
 import json
 import os
 load_dotenv()
@@ -16,7 +17,7 @@ client = MongoClient(uri)
 
 class mongodb_operation:
 
-    def __init__(self, client_url: str, database_name: str, collection_name: str = None):
+    def __init__(self, client_url: str, database_name: str, collection_name: Optional[str] = None):
         self.client_url = client_url
         self.database_name = database_name
         self.collection_name = collection_name
